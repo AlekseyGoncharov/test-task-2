@@ -1,0 +1,16 @@
+postgresql:
+  port: "5432"
+  user: "app_test"
+  db: "app"
+  password: "123qwe"
+email:
+  send: "false"
+  sender: "your-email@gmail.com"
+  smtp_server: "smtp.gmail.com"
+  receiver: "test@domain.com"
+  smtp_port: "465"
+  password: "your-password"
+app:
+  port: "80"
+  hostname: "test-app.localhost"
+  image: "test-app:test"

@@ -1,0 +1,11 @@
+POSTGRES_PASSWORD="123qwe"
+POSTGRES_PORT="5432"
+POSTGRES_SERVER="db"
+POSTGRES_USER="test"
+POSTGRES_DB="app"
+SEND_EMAIL=false
+SENDER_EMAIL="your-email@gmail.com"
+EMAIL_PASSWORD="****"
+SMTP_SERVER = smtp.gmail.com
+RECEIVER = "test@domain.com"
+SMTP_PORT="465"
