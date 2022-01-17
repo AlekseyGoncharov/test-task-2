@@ -1,6 +1,6 @@
 # test-task-paxful
 
-##Deploy
+## Deploy
 
 for deploy application you can run file `deploy.sh` in directory `helm`
 
@@ -25,7 +25,7 @@ app:
   hostname: "test-app.localhost" #hostname for ingress
   image: "test-app:test" #application image
 ```
-##Usage
+## Usage
 
 Application has next endpoints:
 
@@ -42,6 +42,6 @@ if parameter send email was activated in helm values
 
 `http://app/unban/?ip=<banned_ip>` - remove user from ban list
 
-##Tests
+## Tests
 
 for testing you should run file `test.sh` from directory `tests`
