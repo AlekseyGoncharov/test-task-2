@@ -1,13 +1,12 @@
 FROM python:3.9-alpine
+MAINTAINER "SnakeDex"
 
-ADD /app /app
+add . /app
 WORKDIR /app
-RUN apk update && apk add --no-cache postgresql-dev gcc python3-dev musl-dev
+
+RUN apk update && apk add postgresql-dev gcc musl && apk cleancache
 RUN pip install -r requirements.txt
 RUN apk del gcc
-RUN addgroup -g 2000 python-app \
-    && adduser -u 2000 -G python-app -s /bin/sh -D python-app
+EXPOSE 8080
 
-USER 2000
-
-CMD gunicorn --bind 0.0.0.0:5000 wsgi:app
+CMD ["python", "app.py"]
